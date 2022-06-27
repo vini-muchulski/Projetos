@@ -5,7 +5,7 @@ p = url.find("?")
 print(p)
 
 base = url[:p]
-print(base)
+print(base) 
 
 parametros = url[p+1:]
 print("Parametros da URL: ", parametros)
