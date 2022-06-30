@@ -1,24 +1,25 @@
-url = "bytebank.com/cambio?moedaDestino=dolar&moedaOrigem=real"
-print(url)
+url = "bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar"
 
-p = url.find("?")
-print(p)
-
-base = url[:p]
-print(base)
-
-parametros = url[p+1:]
+#  Esquematiza os parametros
+url_parametros = url.find("?")
+base = url[:url_parametros]
+parametros = url[url_parametros+1:]
 print("Parametros da URL: ", parametros)
 
-parametro_oo = "moedaDestino"
+# Busca um parametro
+# O Find do parador recebe um segundo valor
+parametro_oo = "quantidade"
 indice = url.find(parametro_oo)
 posicao = indice + len(parametro_oo) + 1
-parador = url.find("&")
+parador = url.find("&", posicao)
 if parador == -1:
-    print( url[posicao:])
+    print(url[posicao:])
 
 else:
-    print(url[posicao:parador])
+    print(url[posicao: parador])
+
+
+
 
 
 
