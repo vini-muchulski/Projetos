@@ -32,4 +32,5 @@ class Extrator:
         else:
             print(self.url[posicao: parador])
 
-extrator = Extrator("bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar")
+extrator = Extrator("bytebank.com/cambio?quantidade=27&moedaOrigem=real&moedaDestino=dolar")
+valor = extrator.get_busca("quantidade")
