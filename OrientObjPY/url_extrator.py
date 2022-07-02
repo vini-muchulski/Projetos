@@ -46,5 +46,11 @@ class Extrator:
         else:
             print(self.url[posicao: parador])
 
-extrator = Extrator("bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar")
-valor = extrator.get_busca("quantidade")
+    def __len__(self):
+        return len(self.url)
+
+url = Extrator("bytebank.com/cambio?quantidade=100&moedaOrigem=real&moedaDestino=dolar")
+valor = url.get_busca("quantidade")
+
+
+
