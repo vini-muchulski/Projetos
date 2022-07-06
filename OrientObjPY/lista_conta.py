@@ -11,3 +11,9 @@ class ContaCorrente:
     def __str__(self):
         return "[Código: {} - Saldo: {}]".format(self.codigo,self.saldo)
 
+    def adiciona_100(contas):
+        for conta in contas:
+            conta.deposita(100)
+
+
+
