@@ -113,3 +113,55 @@ import numpy as np
 numeros = np.array([127,3.5])
 numeros
 numeros*2
+
+"""Enumerando as idades"""
+
+idades = [29,43,65,73,32,8,12,46]
+
+for a in range(len(idades)):
+  print(a,idades[a])
+
+type(enumerate(idades))
+
+list(range(len(idades)))
+
+list()
+
+idades = [29,43,65,73,32,8,12,46]
+
+for a in range(len(idades)):
+  print(a,idades[a])
+
+type(enumerate(idades))
+
+list(range(len(idades)))
+
+list()
+
+idades = [29,43,65,73,32,8,12,46]
+
+for a in range(len(idades)):
+  print(a,idades[a])
+
+type(enumerate(idades))
+
+list(range(len(idades)))
+
+idades = [29,43,65,73,32,8,12,46]
+
+for a in range(len(idades)):
+  print(a,idades[a])
+
+type(enumerate(idades))
+
+list(range(len(idades)))
+
+idades = [29,43,65,73,32,8,12,46]
+
+for a in range(len(idades)):
+  print(a,idades[a])
+
+
+for numero, idade in enumerate(idades):
+    print(numero,"x",idade)
+
