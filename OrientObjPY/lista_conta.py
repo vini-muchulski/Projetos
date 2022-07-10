@@ -76,6 +76,10 @@ class ContaPoupanca(Conta):
       self._saldo *= 1.01
       self._saldo -=3
 
+conta_apeiron = ContaCorrente(40,150)
+conta_vini = ContaCorrente(27,2000)
+contas = [conta_apeiron, conta_vini]
+
 conta2 = ContaCorrente(2,0)
 
 conta2.deposita(100)
@@ -165,3 +169,14 @@ for a in range(len(idades)):
 for numero, idade in enumerate(idades):
     print(numero,"x",idade)
 
+idades = [29,43,65,73,32,8,12,46]
+
+
+s = sorted(idades)
+
+x = list(sorted(idades, reverse=True))
+
+print(s)
+print(x)
+
+list(reversed(sorted(idades)))
