@@ -34,7 +34,7 @@ class Conta:
 
 from operator import attrgetter
 conta_apeiron = Conta("Apeiron",40,5000)
-conta_vini = Conta("Vini", 27,1500)
+conta_vini = Conta("Vini", 27,4700)
 conta_levi = Conta("Levi", 15,5000)
 contas = [conta_apeiron,conta_levi ,conta_vini]
 conta_vini.deposita(300)
