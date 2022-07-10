@@ -20,28 +20,32 @@ class Conta:
     def __str__(self):
         return "[ Código:{} - Nome: {} - Saldo: {:.2f}]".format(self._codigo,self._nome,  self._saldo)
 
+    def __lt__(self,outro):
+      if self._saldo != outro._saldo:
+        return self._saldo < outro._saldo
+      else:
+        return self._codigo < outro._codigo
+
     def extrai_saldo(self):
         return self._saldo
 
-class ContaCorrente(Conta):
     def vira_mes(self):
       self._saldo -= 2
 
-class ContaPoupanca(Conta):
-    def vira_mes(self):
-      self._saldo *= 1.01
-      self._saldo -=3
-
-conta_apeiron = ContaCorrente("Apeiron",40,150)
-conta_vini = ContaCorrente("Vini", 27,1500)
-contas = [conta_apeiron, conta_vini]
+from operator import attrgetter
+conta_apeiron = Conta("Apeiron",40,5000)
+conta_vini = Conta("Vini", 27,1500)
+conta_levi = Conta("Levi", 15,5000)
+contas = [conta_apeiron,conta_levi ,conta_vini]
 conta_vini.deposita(300)
 
 def extrai_saldo(self):
         return self._saldo
 
-for conta in sorted(contas, key=extrai_saldo):
+for conta in sorted(contas, key=attrgetter("_saldo","_codigo"), reverse=True):
   print(conta)
 
 conta_apeiron.extrai_saldo()
+
+conta_levi < conta_apeiron
 
