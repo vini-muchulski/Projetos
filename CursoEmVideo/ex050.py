@@ -7,6 +7,6 @@ for i in range(1,7):
         soma =soma + numb
         valor = valor +1
 
-print("O somátorio de {} valores foi {}".format(valor, soma))
+print("O somátorio de {} valores pares foi {}".format(valor, soma))
 
 
