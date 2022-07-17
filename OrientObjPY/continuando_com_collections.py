@@ -19,11 +19,13 @@ set(formacao_video_mark)
 lista_curso = list(formacao_video_mark)
 sorted(lista_curso)
 
-usuarios_curso_edicao = {27,14,32,56}
+usuarios_curso_edicao = {27,34,14,32,56}
 usuarios_curso_marketing = {12,34,45,56}
 
-formacao_video_mark = []
-formacao_video_mark = usuarios_curso_edicao.copy()
-formacao_video_mark = usuarios_curso_marketing.copy()
+usuarios_curso_edicao | usuarios_curso_marketing # or
 
-print(formacao_video_mark)
+usuarios_curso_edicao & usuarios_curso_marketing # and
+
+usuarios_curso_edicao - usuarios_curso_marketing
+
+usuarios_curso_edicao ^ usuarios_curso_marketing # or exclusive
