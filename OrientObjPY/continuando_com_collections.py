@@ -7,4 +7,12 @@ Original file is located at
     https://colab.research.google.com/drive/1hLi6cvdGNEnCtGZZl4nuuH2C7oiCmkFK
 """
 
-usuarios_curso = []
+usuarios_curso_edicao = [27,14,32,56]
+usuarios_curso_marketing = [12,34,45,56]
+usuarios_curso_edicao
+formacao_video_mark = []
+formacao_video_mark = usuarios_curso_edicao.copy()
+formacao_video_mark.extend(usuarios_curso_marketing)
+
+lista_curso = list(formacao_video_mark)
+sorted(lista_curso)
