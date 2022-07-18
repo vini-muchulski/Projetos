@@ -29,3 +29,11 @@ usuarios_curso_edicao & usuarios_curso_marketing # and
 usuarios_curso_edicao - usuarios_curso_marketing
 
 usuarios_curso_edicao ^ usuarios_curso_marketing # or exclusive
+
+usuarios = {27,34,14,32,56}
+usuarios.add(12)
+usuarios
+
+usuarios = {27,34,14,32,56}
+usuarios = frozenset(usuarios)
+usuarios
