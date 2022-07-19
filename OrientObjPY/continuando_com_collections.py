@@ -67,3 +67,6 @@ for elemento in aparicoes.keys():
 
 for elemento in aparicoes.values():
   print(elemento)
+
+for elemento in aparicoes.items():
+  print(elemento)
