@@ -62,3 +62,19 @@ for letra, repeticoes in estatistica.items():
   div = (repeticoes/total)*100
   if div>1:
     razao = print("O caractere {} apareceu em {:.1f}%".format(letra,div))
+
+razao = [(letra,(repeticoes/total)*100) for letra, repeticoes in estatistica.items()]
+razao = Counter(dict(razao)).most_common(10)
+razao
+
+def estatisca_do_texto(texto):
+  texto = texto.lower()
+  estatistica = Counter(texto)
+
+  total = sum(estatistica.values())
+  razao = [(caractere, (repeticoes/total)*100) for caractere, repeticoes in estatistica.items()]
+  razao = Counter(dict(razao)).most_common(10)
+  for caractere,proporcao in razao:
+    print("Caractere {} => {:.1f}%".format(caractere,proporcao))
+
+estatisca_do_texto(texto)
