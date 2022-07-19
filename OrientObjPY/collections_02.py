@@ -32,3 +32,33 @@ aparicoes
 from collections import Counter
 aparicoes = Counter(houston)
 aparicoes
+
+"""Teste Final"""
+
+from collections import Counter
+
+texto = """Uma das coisas que mais marcou os 31 anos do Hubble no espaço foi a sua capacidade de fazer imagens das profundezas do universo, ou seja, observar o universo lá no seu início.
+
+Tudo isso para ajudar a responder perguntas básicas, como as primeiras estrelas e primeiras galáxias se formaram?
+
+O Hubble passava então alguns dias, 10, 11 dias apontado para uma determinada região do céu e depois, quando as imagens eram analisadas, o que se viam ali, eram dezenas de milhares de galáxias, lá do início do universo.
+
+Assim tivemos, o Campo Profundo do Hubble, depois o Campo Ultra Profundo do Hubble, e o Campo Extremo do Hubble, todas essas foram iniciativas e tentativas de se tentar chegar o mais próximo possível do início do universo, lá a 13.8 bilhões de anos atrás.
+
+Para entender esse início das coisas no universo, os astrônomos precisam estudar uma época do nosso universo conhecida como Era da Reionização, um período muito complicado, pouca luz, coisas muito distantes, que levam ao limite tudo que conhecemos atualmente.
+
+Então para ajudar a responder todas essas questões, foi construído o maio telescópio espacial da história, o James Webb, que observa o universo em infravermelho e tem como objetivo principal estudar essa Era da Reionização e nos responder como as primeiras estrelas e galáxias se formaram.
+
+Além disso, tentar esticar a régua do Hubble, o Hubble conseguiu ver uma galáxia a 13.4 bilhões de anos-luz de distância da Terra, a ideia é que com o James Webb essa régua seja esticada, quem sabe uns 200 milhões de anos mais para o passado do universo e ver algo lá a 13.6 bilhões de anos-luz de distância."""
+
+
+texto = texto.lower()
+
+Counter(texto.split())
+
+total = sum(estatistica.values())
+
+for letra, repeticoes in estatistica.items():
+  div = (repeticoes/total)*100
+  if div>1:
+    razao = print("O caractere {} apareceu em {:.1f}%".format(letra,div))
