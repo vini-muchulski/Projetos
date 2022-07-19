@@ -54,7 +54,7 @@ Além disso, tentar esticar a régua do Hubble, o Hubble conseguiu ver uma galá
 
 texto = texto.lower()
 
-Counter(texto.split())
+estatistica = Counter(texto)
 
 total = sum(estatistica.values())
 
