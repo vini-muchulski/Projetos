@@ -37,3 +37,15 @@ usuarios
 usuarios = {27,34,14,32,56}
 usuarios = frozenset(usuarios)
 usuarios
+
+houston ="Apollo 11 base tranquilidade a aguia pousou"
+set(houston.split())
+
+aparicoes = {
+  "Vini" : 3,
+  "cachorro" : 2,
+  "nome" : 2,
+  "vindo" : 1
+}
+
+aparicoes["Vini"]
