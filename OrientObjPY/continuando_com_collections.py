@@ -49,3 +49,21 @@ aparicoes = {
 }
 
 aparicoes["Vini"]
+
+aparicoes["Sukhoi"] = 30 
+aparicoes
+
+del aparicoes["Sukhoi"]
+aparicoes
+
+"jaeger" in aparicoes
+aparicoes["jaeger"] = 4
+
+for elemento in aparicoes:
+  print(elemento)
+
+for elemento in aparicoes.keys():
+  print(elemento)
+
+for elemento in aparicoes.values():
+  print(elemento)
