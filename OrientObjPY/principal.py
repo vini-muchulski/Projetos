@@ -1,6 +1,6 @@
 
 #from validate_docbr import CPF, CNPJ
-from cpf_cnpj import CpfCnpj
+from cpf_cnpj import Doc
 #pff = Cpf("01234567890")
 #print(cpff)
 
@@ -11,7 +11,7 @@ cpf_ex = "80924689072"
 #print(cnpj.validate(cnpj_ex))
 
 
-documento = CpfCnpj(cpf_ex,"cpf")
+documento = Doc.cria_doc(cnpj_ex)
 print(documento)
 
 
