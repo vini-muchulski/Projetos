@@ -1,9 +1,7 @@
 import re
 
-padrao = "[0-9][a-z][0-9]"
-texto = "avkdbw 2v7"
+padrao = "\w{1,50}@[a-z]{3,10}.[a-z]{1,3}"
+email = "paripapah vinidias@gmail.com"
+busca = re.search(padrao, email)
 
-busca = re.search(padrao,texto)
-
-print(busca)
 print(busca.group())
