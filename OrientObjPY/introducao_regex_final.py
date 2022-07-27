@@ -1,7 +1,7 @@
 from telefones import Telefone
 
-ex_numb = "48936715223"
+numero = "5548936715223"
 
-numb = Telefone(ex_numb)
+numero_objeto = Telefone(numero)
 
-numb.formata_numero()
+print(numero_objeto)
