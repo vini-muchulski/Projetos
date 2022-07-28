@@ -1,3 +1,3 @@
-# Projetos 💾
+# Projetos 
 
-Repositório dos códigos feitos ao longo do estudo de Python
+💾 Repositório dos códigos feitos ao longo do estudo de Python 💾 
