@@ -13,6 +13,8 @@ print(cadastro.semana_dia())
 cadastro = Dia()
 print(cadastro)
 
+
 #hoje = datetime.today()
 #hoje_format = hoje.strftime("%d/%m/%Y %H:%M")
 #print(hoje_format)
+
