@@ -27,3 +27,7 @@ class Dia:
         ]
         semana_dia = self.dia_cadastro.weekday()
         return semana_dia_lista[semana_dia]
+
+    def tempo_de_cadastro(self):
+        tempo_de_cadastro = datetime.today() - self.dia_cadastro
+        return tempo_de_cadastro
