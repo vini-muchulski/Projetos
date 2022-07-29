@@ -16,6 +16,7 @@ print(documento) """
 
 from api_cep import BuscaEndereco
 
+
 cep = 86754294
 
 obj_cep = BuscaEndereco(cep)
