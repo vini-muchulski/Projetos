@@ -11,15 +11,13 @@ termo = 1
 while termo < 10:
     if termo == 1:
         somatorio = prim_termo + razao
-        print("{} -> ".format(somatorio), end=" ")
+        print("{} -> {} ->".format(prim_termo, somatorio), end=" ")
     else:
         somatorio += razao
-        print("{} -> ".format(somatorio), end=" ")
+        print("{} ->".format(somatorio), end=" ")
     termo += 1
 
-
-
-print(somatorio)
+print("Fim ")
 
 
 
