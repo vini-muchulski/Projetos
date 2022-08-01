@@ -8,7 +8,7 @@ termo_inicial = 1
 print(" {} -> {}".format(termo_zero, termo_inicial),end=" ")
 
 cont = 3
-variavel_salva = qnt_termos
+
 while cont <= qnt_termos:
 
 
@@ -17,5 +17,5 @@ while cont <= qnt_termos:
 
     termo_zero =termo_inicial
     termo_inicial = termo_dois
-    qnt_termos -= 1
+    cont +=1
 print("= Fim")
