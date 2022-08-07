@@ -4,17 +4,28 @@
 cont = 0
 somatorio = 0
 continua = "S"
+maior = menor = 0
 
-while continua =="S":
-
-
+while continua in "Ss":
     numb = int(input("Digite um número: "))
     cont += 1
     somatorio += numb
     continua = str(input("Deseja continuar? [S/N]: ")).upper()
 
-media = somatorio/cont
+    if cont ==1:
+        maior = menor = numb
 
-print(" {} números foram gerados e a média entre eles foi {:.2f}".format(cont, media))
+    else:
+        if numb>maior:
+            maior = numb
+
+        elif menor>numb:
+            menor = numb
+
+media = somatorio/cont
+print("{} números foram gerados e a média entre eles foi {:.2f}.".format(cont, media))
+
+if cont>= 2 and maior != menor:
+    print("O menor número foi {} e o maior foi {}".format( menor, maior))
 
 
