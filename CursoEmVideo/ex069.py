@@ -13,12 +13,14 @@ cont_m20 = 0
 
 while True:
     idade = int(input("IDADE: "))
-    
-    genero = str(input("Genêro [M/F]: ")).strip().upper()
+    genero = " "
+    while genero not in "MF":
+        genero = str(input("Genêro [M/F]: ")).strip().upper()
+
 
     continua = str(input("Deseja continuar [S/N]: ")).strip().upper()
 
-    if idade>18:
+    if idade>= 18:
         cont_18+=1
     if idade <= 20 and genero =="F":
         cont_m20+=1
