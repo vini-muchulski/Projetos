@@ -2,6 +2,14 @@
 
 tupla = ("Zero","um","dois","tres","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","quatorze","quinze","dezesseis","dezessete","dezoito","dezenove","vinte")
 
-input = int(input("Digite um valor entre 0 e 20: "))
+while True:
+    digito = int(input("Digite um valor entre 0 e 20: "))
+    if digito in range( 0, len(tupla)):
+        print("Você digitou", tupla[digito].title())
+        break
 
-print("Você digitou ", tupla[input].title())
+    else:
+        print("Erro!")
+
+
+
