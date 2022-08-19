@@ -2,16 +2,24 @@
 
 numero = int(input("Digite o valor do numero: "))
 fatorial = numero
-restou = 0
 
-while numero != 1:
+
+while True:
+
+
      print("------", numero)
-     numero -=1
-     fatorial = fatorial * (numero)
-     restou = fatorial
+
+     b = numero-1
+     if b==0:
+          break
+
+     fatorial = fatorial * b
+
+     numero -= 1
 
 
-print(restou)
+
+print(fatorial)
 
 
 
