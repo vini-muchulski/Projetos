@@ -5,16 +5,13 @@ fatorial = numero
 b = numero-1
 
 while True:
-     print("------", numero)
-
+     print("------", fatorial)
 
      if b==0:
           break
 
      fatorial = fatorial * b
-
-     numero -= 1
-
+     b -= 1
 
 
 print(fatorial)
