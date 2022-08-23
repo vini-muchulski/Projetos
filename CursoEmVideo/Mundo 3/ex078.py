@@ -7,12 +7,6 @@ for c in range(0,5):
     numero = int(input("Digite um valor para a posição {} : ".format(c)))
     lista.append(numero)
 
-    """continua = str(input("Deseja continuar? [S/N]: "))
-    continua = continua.upper()
-
-    if continua != "S":
-        break"""
-
 
 
 maior_valor = sorted(lista)
