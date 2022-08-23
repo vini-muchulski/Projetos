@@ -24,8 +24,8 @@ print(f"O maior valor foi {maior_valor[0]}  e menor foi {menor_valor[0]}")
 
 for indice, valor in enumerate(lista):
     if valor == maior_valor[0]:
-        print(indice)
+        print("O maior valor esta na posição ",indice)
 
-    if valor == menor_valor:
-        print(indice)
+    if valor == menor_valor[0]:
+        print("O menor valor esta na posição ",indice)
 
