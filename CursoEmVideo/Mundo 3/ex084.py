@@ -13,21 +13,18 @@ while True:
     peso_nome.append(peso)
 
     if cont == 0:
-        maior = menor = peso_nome[1]
+        maior = menor = peso
 
-    if peso_nome[1] >= maior:
-        peso_nome[1] = maior
+    if peso >= maior:
+        maior = peso_nome[1]
 
-    if peso_nome[1] < menor:
-        peso_nome[1] = menor
+    if peso < menor:
+        menor = peso_nome[1]
 
     listagem.append(peso_nome[:])
     peso_nome.clear()
 
     cont += 1
-
-    print(maior,menor,listagem, peso_nome,peso,cont)
-
 
     continua = str(input("Deseja continuar? [S/N]: "))
     continua = continua.upper()
@@ -38,13 +35,13 @@ while True:
 print("-="*20)
 
 print(f"Ao todo {cont} pessoas foram cadastradas")
-print(f"Maior peso: {maior}", end=" ")
+print(f"Maior peso: {maior} Kg de", end=" ")
 
 for elemento in listagem:
     if elemento[1] == maior:
         print(elemento[0])
 
-print(f"Menor peso: {menor}", end=" ")
+print(f"Menor peso: {menor} Kg de", end=" ")
 
 for elemento in listagem:
     if elemento[1] == menor:
