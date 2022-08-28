@@ -12,10 +12,12 @@ jogo = []
 
 for game in range(0, numero):
     for i in range(0, 6):
-        num_megasena = randint(1, 61)
+        num_megasena = randint(1, 60)
         jogo.append(num_megasena)
+
     print(jogo)
     jogo.clear()
+
     time.sleep(0.5)
 
 print("-----BOA SORTE-------")
