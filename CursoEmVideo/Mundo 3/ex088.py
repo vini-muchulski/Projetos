@@ -9,15 +9,20 @@ print("-="*20)
 print("-----GERANDO SEUS NÚMEROS-------")
 
 jogo = []
-
-for game in range(0, numero):
-    for i in range(0, 6):
+c = 0
+i= 0
+while c < numero:
+    while True:
         num_megasena = randint(1, 60)
-        jogo.append(num_megasena)
+        if num_megasena not in jogo:
+            jogo.append(num_megasena)
+            i+=1
+        if len(jogo) == 6:
+            break
 
     print(jogo)
     jogo.clear()
-
-    time.sleep(0.5)
+    #time.sleep(0.5)
+    c += 1
 
 print("-----BOA SORTE-------")
