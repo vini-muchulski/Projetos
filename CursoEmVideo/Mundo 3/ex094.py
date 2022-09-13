@@ -1,13 +1,13 @@
 #Exercício Python 094: Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre: A) Quantas pessoas foram cadastradas B) A média de idade C) Uma lista com as mulheres D) Uma lista de pessoas com idade acima da média
+
+
+
 from pydoc import visiblename
 
 
 infos = {}
 lista_final = list()
 
-nome = 0
-idade = 0
-sexo = 0
 cont = 0
 media_idades = 0
 
@@ -38,6 +38,7 @@ media_final = media_idades/cont
 print(f"Ao todo {cont} pessoas foram cadastradas")
 print(f"A média foi {media_final} anos")
 print(lista_final)
+
     
         
 
