@@ -20,3 +20,18 @@ def maior(n1,n2,n3):
     print(f"O menor é {menor} e o maior é {maior}")
 
 maior(5,3,4)
+
+
+def maiores(*numeros):
+    i = maior_ = 0
+    for valor in numeros:
+        if i == 0:
+            maior_ =  valor
+        else:
+            if valor>maior_:
+                maior_ = valor
+
+    print(f"O maior valo r foi {maior_}")
+
+
+maiores(1,2,3,4,5,6,6,7,8)
