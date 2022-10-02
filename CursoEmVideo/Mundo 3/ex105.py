@@ -2,10 +2,9 @@
 
 def notas(*nota):
     notas = list()
-    total = 0
+
     for n in nota:
         notas.append(n)
-        total += 1
 
     menor = sorted(notas)
     menor = menor[0]
@@ -17,11 +16,10 @@ def notas(*nota):
     for e in notas:
         somatorio +=e
 
-    media = somatorio/total
+    media = somatorio/len(notas)
 
-    dicit = {"total": total, "media": media, "menor": menor, "maior": maior}
+    dicit = {"total": len(notas), "media": media, "menor": menor, "maior": maior}
     return dicit
-
 
 resp = notas(9,3,6,10,8,8,2)
 print(resp)
