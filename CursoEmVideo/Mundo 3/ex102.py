@@ -2,14 +2,18 @@
 
 def fatorial(num,show=False):
     total = 1
-    for i in range(num,1,-1):
+    for i in range(num,0,-1):
+
+        if show == True:
+            if i>1:
+                print(f"{num} x", end=" ")
+
+            else:
+                print(f"{num} =", end=" ")
+
         total = total * num
         num = num - 1
-        print(total)
 
-    if show == True:
-        for i in range(num, 1, -1):
-            print(f"{num} X")
+    return total
 
-
-fatorial(6)
+print(fatorial(3,True))
