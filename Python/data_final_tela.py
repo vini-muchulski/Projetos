@@ -1,8 +1,11 @@
-import time
-
+import tkinter as tk
 
 """processa a data futura inserida pelo usario"""
-def quantos_dias_faltam(data):
+def quantos_dias_faltam():
+
+    data = entrada_data.get()
+
+    import time
     """tratamento de dados"""
     data.strip()
     if (len(data) != 10):
@@ -46,17 +49,39 @@ def quantos_dias_faltam(data):
                 dias_restantes -=1
 
 
+    data_restante = (f"{anos_restantes} anos - {meses_restantes} meses e {dias_restantes} dias restantes")
 
+    lb_valor_palavra_cod.config(text=data_restante)
+
+
+    """
     print(f"{anos_restantes} anos - {meses_restantes} meses e {dias_restantes} dias restantes")
     print("\n-----------------------------\n")
-
+    """
 
 
 
 """MAIN"""
-data_informada = str(input("Digite uma data (no formata DD/MM/YYYY):  "))
 
-quantos_dias_faltam(data_informada)
+tela = tk.Tk()
+tela.title("Quantos dias faltam?")
+
+lb_palavra = tk.Label(tela,text='Digite uma data (no formata DD/MM/YYYY):  ', font = 'Helvetica, 16')
+lb_palavra.grid(row=0,column=0,pady=5,padx=5)
+
+lb_palavra_cod = tk.Label(tela,text='Tempo restante', font = 'Helvetica, 16')
+lb_palavra_cod.grid(row=0,column=1,pady=5,padx=5)
+
+lb_valor_palavra_cod = tk.Label(tela,text='----', font = 'Helvetica, 16')
+lb_valor_palavra_cod.grid(row=1,column=1,pady=5,padx=5)
+
+entrada_data = tk.Entry(tela, relief='solid', borderwidth=2,font='Helvetica, 10')
+entrada_data.grid(row=1, column=0,sticky="we",pady=5,padx=5)
+
+botao_codificar= tk.Button(tela, text="Calcular", relief="raised", font = 'Helvetica, 16', bg='#0bf555',command=quantos_dias_faltam)
+botao_codificar.grid(row=2, column=0,sticky="we",pady=5,padx=5)
+
+tela.mainloop()
 
 
 
